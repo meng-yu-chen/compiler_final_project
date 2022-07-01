@@ -1,0 +1,9 @@
+cd C:\Flex\final
+
+flex token.l
+
+bison -d grammar.y
+
+gcc grammar.tab.c lex.yy.c -lfl
+
+a.exe
